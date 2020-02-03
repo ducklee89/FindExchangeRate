@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Shop Item - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/shop-item.css" rel="stylesheet">
+
+  <style media="screen">
+    .personalList {
+      /* 등록한 list의 높이 정함 */
+      height : 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  {% include  'head.html' %}
+
+  <!-- Page Content -->
+  <div class="container" id="wrapper">
+
+    <div class="row">
+
+      <div class="col-lg-3" id="sidebar-wrapper">
+        <h1 class="my-4">Shop Name</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">내 목록</a>
+        </div>
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+        <div class="card mt-4">
+          <img class="card-img-top img-fluid" src="{{graph1}}" alt="">
+          <div class="card-body">
+            <h3 class="card-title">Product Name</h3>
+            <h4>$24.99</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+
+          </div>
+        </div>
+        <!-- /.card -->
+
+          <div class="card card-outline-secondary my-4">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">disable</a>
+              </li>
+            </ul>
+            <div class="card-body">
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"> <input type="text" name="" placeholder="URL"> </li>
+                <li class="list-group-item">
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>화폐</option>
+                    <option value="1">달러</option>
+                    <option value="2">위안</option>
+                    <option value="3">원</option>
+                  </select>
+                </li>
+                <li class="list-group-item"> <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                  <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                  </div>
+                </div>
+               </li>
+             </ul>
+             <div class="card-body">
+               <li class="list-group-item"> <input type="text" name="" size="20" placeholder="개인메모"> </li>
+             </div>
+           </div>
+          </div>
+
+          <div class="row" style="height: 70px;" > <!-- 메모 container -->
+
+            <div class="col-md border border-dark" >
+              <!-- Grid Outer2  -->
+              <!-- Level1: .col-md -->
+              <div class="row h-50" style="background-color:#eee; ">
+                <!-- Level 2: .col-8 .col-sm-6 -->
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                    <a href="https://www.klug.kr/product/detail.html?product_no=21&cate_no=1&display_group=2&ctnakey=03-1674-34-142255&utm_source=naver&utm_medium=CPM&utm_term=%EC%98%81%EB%A1%B1%EB%B3%B8%EC%B2%B44%EA%B0%9C%ED%87%B4%EA%B7%BC%ED%9B%84%ED%95%84%EC%88%98%ED%85%9C_%EB%82%A8_T&utm_group=sb_m&utm_campaign=naverPC_sb_T&cafe_mkt=ue_naver_shoppingbox&NaPm=ct%3Dk476zejk%7Cci%3Dc6de0096d8ba878696b67790a92b2079979c2556%7Ctr%3Dsbtp%7Csn%3D726940%7Chk%3D8c6d0118554147b8dc3c4668fc20844c75f1e961">
+                      마사지기</a>
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavender;">
+                    1332.1
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavenderblush;">
+                    1441.1
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavender;">
+                    10.1+기호
+                  </div>
+              </div>
+              <div class="row h-50" style="background-color:blue;">
+                Level 2: .col-4 .col-sm-6
+              </div>
+            </div>
+            <div class="col-1 border border-dark" style="vertical-align: middle;background-color:lavender;">10</div> <!-- number -->
+          </div>
+
+
+
+          <div class="card card-outline-secondary my-4">
+          <div class="card-header">
+            My Product List / 검색창도 필요할듯.
+          </div>
+          <div class="card-body">
+            <!-- Start 1번쨰 리스트 -->
+            1
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            4.0 stars
+            <div class="row" style="height: 100px;" > <!-- 메모 container -->
+
+              <div class="col-md rounded-left border border-secondary" >
+                <!-- Grid Outer2  -->
+                <!-- Level1: .col-md -->
+                <div class="row" style="height:33%; background-color:#eee; ">
+                  <!-- Level 2: .col-8 .col-sm-6 -->
+                  <div class="col-sm-6" style="background-color:lavenderblush;">
+                    <a href="https://www.klug.kr/product/detail.html?product_no=21&cate_no=1&display_group=2&ctnakey=03-1674-34-142255&utm_source=naver&utm_medium=CPM&utm_term=%EC%98%81%EB%A1%B1%EB%B3%B8%EC%B2%B44%EA%B0%9C%ED%87%B4%EA%B7%BC%ED%9B%84%ED%95%84%EC%88%98%ED%85%9C_%EB%82%A8_T&utm_group=sb_m&utm_campaign=naverPC_sb_T&cafe_mkt=ue_naver_shoppingbox&NaPm=ct%3Dk476zejk%7Cci%3Dc6de0096d8ba878696b67790a92b2079979c2556%7Ctr%3Dsbtp%7Csn%3D726940%7Chk%3D8c6d0118554147b8dc3c4668fc20844c75f1e961">
+                      {{#마사지기#}}</a>
+                  </div>
+                  <div class="col-sm-6" style="background-color:lavender;">
+                    {{#$1300#}}
+                  </div>
+                </div>
+                <div class="row" style="height:33%;background-color:blue;">
+                  <!-- Level 2: .col-4 .col-sm-6 -->
+                  <div class="col-sm-4" style="background-color:lavenderblush;">
+                    {{#1332.1#}}
+                  </div>
+                  <div class="col-sm-4" style="background-color:lavender;">
+                    {{#1441.1#}}
+                  </div>
+                  <div class="col-sm-4" style="background-color:lavenderblush;">
+                    {{#10.1+기호#}}
+                  </div>
+                </div>
+                <div class="row" style="height:34%;background-color:blue;">
+                  <!-- Level 2: .col-4 .col-sm-6 -->
+                  <div class="col-sm-9" style="background-color:lavenderblush;">
+                     {{#개인메모#}}
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavender;">
+                     {{#날짜#}}
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 rounded-right border border-secondary" style="vertical-align: middle;background-color:lavender;">
+                <!-- edit, delete -->
+                <input type="button" name="" value="수정">
+                <input type="button" name="" value="삭제">
+            </div> <!-- end  button -->
+            </div>  <!-- End MemoContainer -->
+            <!-- End 1번쨰 리스트 -->
+
+            <!-- 2번쨰 리스트 -->
+            2
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            4.0 stars
+            <div class="row" style="height: 100px;" > <!-- 메모 container -->
+
+              <div class="col-md border border-dark" >
+                <!-- Grid Outer2  -->
+                <!-- Level1: .col-md -->
+                <div class="row" style="height:33%; background-color:#eee; ">
+                  <!-- Level 2: .col-8 .col-sm-6 -->
+                  <div class="col-sm-6" style="background-color:lavenderblush;">
+                    <a href="https://www.klug.kr/product/detail.html?product_no=21&cate_no=1&display_group=2&ctnakey=03-1674-34-142255&utm_source=naver&utm_medium=CPM&utm_term=%EC%98%81%EB%A1%B1%EB%B3%B8%EC%B2%B44%EA%B0%9C%ED%87%B4%EA%B7%BC%ED%9B%84%ED%95%84%EC%88%98%ED%85%9C_%EB%82%A8_T&utm_group=sb_m&utm_campaign=naverPC_sb_T&cafe_mkt=ue_naver_shoppingbox&NaPm=ct%3Dk476zejk%7Cci%3Dc6de0096d8ba878696b67790a92b2079979c2556%7Ctr%3Dsbtp%7Csn%3D726940%7Chk%3D8c6d0118554147b8dc3c4668fc20844c75f1e961">
+                      {{#마사지기#}}</a>
+                  </div>
+                  <div class="col-sm-6" style="background-color:lavender;">
+                    {{#$1300#}}
+                  </div>
+                </div>
+                <div class="row" style="height:33%;background-color:blue;">
+                  <!-- Level 2: .col-4 .col-sm-6 -->
+                  <div class="col-sm-4" style="background-color:lavenderblush;">
+                    {{#1332.1#}}
+                  </div>
+                  <div class="col-sm-4" style="background-color:lavender;">
+                    {{#1441.1#}}
+                  </div>
+                  <div class="col-sm-4" style="background-color:lavenderblush;">
+                    {{#10.1+기호#}}
+                  </div>
+                </div>
+                <div class="row" style="height:34%;background-color:blue;">
+                  <!-- Level 2: .col-4 .col-sm-6 -->
+                  <div class="col-sm-9" style="background-color:lavenderblush;">
+                     {{#개인메모#}}
+                  </div>
+                  <div class="col-sm-3" style="background-color:lavender;">
+                     {{#날짜#}}
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 border border-dark" style="vertical-align: middle;background-color:lavender;">10</div> <!-- number -->
+            </div> <!-- End MemoContainer -->
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <a href="#" class="btn btn-success">네비게이션바</a>
+          </div>
+        </div>
+
+        <!-- /.card -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  {% include  'foot.html' %}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

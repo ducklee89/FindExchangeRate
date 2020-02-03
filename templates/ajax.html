@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method='post' id='test'>
+      <input type="hidden" value="video34"/>
+      <input type='submit' value='Test button'/>
+      <div id='message'>Initial text</div>
+    </form>
+  </body>
+  <script src="/static/js/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#test").submit(function (event) {
+        $.ajax({
+          type: "POST",
+          url: "/board/edit_favorites",
+          data: {
+            'video': $('#test').val() // from form
+          },
+          success: function () {
+            $('#message').html("<h2>Contact Form Submitted!</h2>")
+          }
+        });
+        return false; //<---- move it here
+      });
+
+    });
+  </script>
+</html>

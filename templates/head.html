@@ -1,0 +1,27 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <div class="container">
+
+    <a class="navbar-brand js-scroll-trigger"  href="/#page-top"><img src="/static/img/logo.jpg"
+      style="width: 50px;height: 50px;;" alt="Logo">DHY StartCorp.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="my-2 my-md-0 mr-md-3" id="navbarResponsive">
+      <!--collapse navbar-collapse-->
+
+      {% if user.is_authenticated %}
+      <!-- 만약 로그인이 되어있는 상태이면 -->
+      <font color = "white"> {{user.last_name}} {{user.first_name}}님 환영합니다.</font>
+      <!-- 다음과같이 출력 -->
+      <a class="btn btn-outline-primary" href="/member/logout">LogOut</a>
+      <a class="p-2 text-white" href="/member/member_modify">MyPage</a>
+      <a class="p-2 text-white" href="/board/">Main</a>
+      {% else %}
+      <a class="p-2 text-white" href="/member/login">Login</a>
+      <a class="btn btn-outline-primary" href="/member/signup">Sign up</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
